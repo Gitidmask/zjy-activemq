@@ -83,7 +83,7 @@ public class PushController {
     public ResultResponse clientPush(Client client) {
         ResultResponse resultResponse = new ResultResponse();
         try {
-            userPushService.push(client);
+            clientPushService.push(client);
             resultResponse.setData(client);
         } catch (Exception e) {
             e.printStackTrace();
